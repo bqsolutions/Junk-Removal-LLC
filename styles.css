@@ -87,7 +87,7 @@ nav {
   display: flex; align-items: center; cursor: pointer;
 }
 .nav-logo-img {
-  height: 46px; width: auto; display: block; border-radius: 15px;
+  height: 56px; width: auto; display: block; border-radius: 15px;
 }
 .nav-links {
   display: flex; gap: 0.25rem; list-style: none;
