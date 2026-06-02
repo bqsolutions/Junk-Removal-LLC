@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junk And Cleaning Solutions LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">
+    <span class="nav-logo-top">Junk & Cleaning Solutions</span>
+    <span class="nav-logo-bot">Licensed · Insured · LLC</span>
+  </div>
+  <ul class="nav-links">
+    <li><button onclick="showPage('home')" id="nav-home" class="active">Home</button></li>
+    <li><button onclick="showPage('about')" id="nav-about">About Us</button></li>
+    <li><button onclick="showPage('contact')" id="nav-contact">Contact Us</button></li>
+    <li><button onclick="showPage('request')" id="nav-request" class="nav-cta">Request Service</button></li>
+  </ul>
+  <div class="nav-phone">📞 <a href="tel:">Call for a Free Quote</a></div>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <button onclick="showPage('home')" id="mob-home" class="active">Home</button>
+  <button onclick="showPage('about')" id="mob-about">About Us</button>
+  <button onclick="showPage('contact')" id="mob-contact">Contact Us</button>
+  <button onclick="showPage('request')" id="mob-request" class="mobile-cta">Request Service</button>
+</div>
+
+<!-- ══════════════════════════════════════ HOME ══════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Serving Your Area · Fast Response · Free Quotes</div>
+    <h1>
+      Haul It Away.<br>
+      <span>Clean It Up.</span>
+    </h1>
+    <p class="hero-sub">Junk And Cleaning Solutions LLC handles everything — from full property cleanouts to single-item pickups. We show up, we haul it, you relax.</p>
+    <div class="hero-btns">
+      <button class="btn-blue" onclick="showPage('request')">Book a Pickup →</button>
+      <button class="btn-ghost" onclick="showPage('contact')">Get a Free Quote</button>
+    </div>
+    <div class="trust-strip">
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-text"><strong>Same-Day Available</strong><span>Fast scheduling</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💰</div>
+        <div class="trust-text"><strong>Upfront Pricing</strong><span>No hidden fees</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">♻️</div>
+        <div class="trust-text"><strong>Eco-Responsible</strong><span>We recycle & donate</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🏢</div>
+        <div class="trust-text"><strong>Licensed LLC</strong><span>Fully insured</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="section-tag">What We Do</div>
+    <h2 class="section-h">Our <em>Services</em></h2>
+    <p class="section-p">From a single couch to an entire property — we handle junk removal and cleaning jobs of every size, residential and commercial.</p>
+    <div class="services-grid">
+      <div class="srv">
+        <div class="srv-icon">🏠</div>
+        <div class="srv-title">Residential Junk Removal</div>
+        <p class="srv-desc">Clear out your home, garage, basement, or attic. We haul furniture, appliances, electronics, and general clutter.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🏗️</div>
+        <div class="srv-title">Construction Debris</div>
+        <p class="srv-desc">Renovation leftovers, drywall, lumber, roofing materials, concrete — we clean up job sites fast.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🏢</div>
+        <div class="srv-title">Commercial Cleanouts</div>
+        <p class="srv-desc">Office furniture, warehouse junk, retail fixtures — we handle commercial jobs of any scale.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🚛</div>
+        <div class="srv-title">Full Property Cleanouts</div>
+        <p class="srv-desc">Estate cleanouts, foreclosure cleanups, and move-out services. We empty entire properties efficiently.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🛋️</div>
+        <div class="srv-title">Furniture & Appliance Pickup</div>
+        <p class="srv-desc">Old sofas, refrigerators, washing machines, mattresses — we pick up bulky items you can't move yourself.</p>
+      </div>
+      <div class="srv">
+        <div class="srv-icon">🧹</div>
+        <div class="srv-title">Property Cleaning</div>
+        <p class="srv-desc">Post-removal cleaning, move-in/move-out cleaning, and general property cleanup services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="section-tag">Simple Process</div>
+    <h2 class="section-h">How It <em>Works</em></h2>
+    <p class="section-p">Getting rid of junk shouldn't be complicated. Here's how easy we make it.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Request a Quote</div>
+        <p class="step-desc">Fill out our form or call us. We'll get back to you quickly with a free, upfront price — no surprises.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">Schedule a Time</div>
+        <p class="step-desc">Pick a time that works for you. Same-day and next-day appointments are often available.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">We Show Up</div>
+        <p class="step-desc">Our crew arrives on time with the right equipment to handle your job safely and efficiently.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-title">Done. Enjoy the Space.</div>
+        <p class="step-desc">We haul everything away, clean up behind ourselves, and leave you with a clutter-free space.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <h2>Ready to Clear the Clutter?</h2>
+    <p>Get a free, no-obligation quote today. We respond fast and get the job done right.</p>
+    <button class="btn-white" onclick="showPage('request')">Schedule a Pickup Now →</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Junk & Cleaning Solutions LLC</div>
+        <p class="footer-tagline">Professional junk removal and property cleaning services. Licensed, insured, and committed to getting the job done right.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Pages</div>
+        <ul class="footer-links">
+          <li><button onclick="showPage('home')">Home</button></li>
+          <li><button onclick="showPage('about')">About Us</button></li>
+          <li><button onclick="showPage('contact')">Contact Us</button></li>
+          <li><button onclick="showPage('request')">Request Service</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><button onclick="showPage('request')">Residential Junk Removal</button></li>
+          <li><button onclick="showPage('request')">Commercial Cleanouts</button></li>
+          <li><button onclick="showPage('request')">Construction Debris</button></li>
+          <li><button onclick="showPage('request')">Property Cleaning</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Junk And Cleaning Solutions LLC · All Rights Reserved</span>
+      <span>Licensed · Insured · Eco-Responsible</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ══════════════════════════════════════ ABOUT ══════════════════════════════════════ -->
+<div id="page-about" class="page">
+
+  <div class="about-hero">
+    <div class="section-tag">Who We Are</div>
+    <h1 class="page-title">About <em>Us</em></h1>
+    <p class="page-sub">We're a locally owned and operated junk removal and cleaning company built on hard work, honesty, and a commitment to leaving every property better than we found it.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-stat-row">
+        <div class="about-stat">
+          <div class="about-stat-num">100%</div>
+          <div class="about-stat-label">Satisfaction Goal</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">LLC</div>
+          <div class="about-stat-label">Licensed & Insured</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">Same</div>
+          <div class="about-stat-label">Day Service Available</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">Free</div>
+          <div class="about-stat-label">Estimates Always</div>
+        </div>
+      </div>
+      <div class="promise-box">
+        <div class="promise-label">Our Promise</div>
+        <p class="promise-text">"We treat every customer's property with respect. We show up on time, give honest prices, and don't leave until the job is completely done."</p>
+      </div>
+    </div>
+    <div class="about-text">
+      <h3>Built on <em class="blue-text">Hard Work</em></h3>
+      <p>Junk And Cleaning Solutions LLC was founded with a simple mission: make it easy for homeowners and businesses to get rid of unwanted junk without the hassle, stress, or hidden fees that come with other services.</p>
+      <p>We're a locally owned company that genuinely cares about our community. When we haul away your junk, we do our best to recycle, repurpose, or donate items before sending anything to a landfill.</p>
+      <p>Whether you have a single couch that needs to go or an entire estate to clear out, we bring the truck, the crew, and the work ethic to get it done right.</p>
+      <ul class="value-list">
+        <li>Upfront pricing — you know the cost before we start</li>
+        <li>On-time arrivals and professional crew</li>
+        <li>We handle all the heavy lifting — you don't lift a finger</li>
+        <li>Responsible disposal: we recycle and donate when possible</li>
+        <li>Residential and commercial jobs of all sizes</li>
+        <li>Licensed LLC with full insurance coverage</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="mission-section">
+    <div class="section-tag">Our Values</div>
+    <h2 class="section-h">What We <em>Stand For</em></h2>
+    <div class="mission-cards">
+      <div class="mission-card">
+        <div class="mission-icon">🤝</div>
+        <div class="mission-title">Honesty First</div>
+        <p class="mission-desc">We give you a real price upfront. No bait-and-switch, no surprise fees when we show up. What we quote is what you pay.</p>
+      </div>
+      <div class="mission-card">
+        <div class="mission-icon">⚡</div>
+        <div class="mission-title">Reliability</div>
+        <p class="mission-desc">We show up when we say we will. We know your time is valuable, and we respect that with every appointment.</p>
+      </div>
+      <div class="mission-card">
+        <div class="mission-icon">♻️</div>
+        <div class="mission-title">Eco-Responsible</div>
+        <p class="mission-desc">We sort through what we haul and try to recycle, donate, or repurpose items. Our goal is to keep as much as possible out of landfills.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>Ready to Work With Us?</h2>
+    <p>Get a free quote today — no obligation, no pressure. Just honest pricing and great service.</p>
+    <button class="btn-white" onclick="showPage('request')">Request Service →</button>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Junk & Cleaning Solutions LLC</div>
+        <p class="footer-tagline">Professional junk removal and property cleaning services. Licensed, insured, and committed to getting the job done right.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Pages</div>
+        <ul class="footer-links">
+          <li><button onclick="showPage('home')">Home</button></li>
+          <li><button onclick="showPage('about')">About Us</button></li>
+          <li><button onclick="showPage('contact')">Contact Us</button></li>
+          <li><button onclick="showPage('request')">Request Service</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><button onclick="showPage('contact')">Get a Free Quote</button></li>
+          <li><a href="https://www.facebook.com/p/Junk-And-Cleaning-Solutions-61565049747317/" target="_blank">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Junk And Cleaning Solutions LLC</span>
+      <span>Licensed · Insured · Eco-Responsible</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ══════════════════════════════════════ CONTACT ══════════════════════════════════════ -->
+<div id="page-contact" class="page">
+
+  <div class="contact-split">
+    <div class="contact-left-panel">
+      <div class="section-tag contact-tag">Get In Touch</div>
+      <h2>Let's Get<br>That Junk Gone.</h2>
+      <p>Have a question or ready to book? Reach out and we'll get back to you fast with a free, no-obligation estimate.</p>
+      <div class="contact-details">
+        <div class="c-detail">
+          <div class="c-detail-icon">📞</div>
+          <div>
+            <div class="c-detail-label">Phone</div>
+            <a href="tel:">Call for a Free Quote</a>
+          </div>
+        </div>
+        <div class="c-detail">
+          <div class="c-detail-icon">📘</div>
+          <div>
+            <div class="c-detail-label">Facebook</div>
+            <a href="https://www.facebook.com/p/Junk-And-Cleaning-Solutions-61565049747317/" target="_blank">Junk And Cleaning Solutions LLC</a>
+          </div>
+        </div>
+        <div class="c-detail">
+          <div class="c-detail-icon">⏰</div>
+          <div>
+            <div class="c-detail-label">Availability</div>
+            <span>7 Days a Week · Same-Day Available</span>
+          </div>
+        </div>
+        <div class="c-detail">
+          <div class="c-detail-icon">💬</div>
+          <div>
+            <div class="c-detail-label">Response Time</div>
+            <span>We respond fast — usually within the hour</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right-panel">
+      <h3>Send Us a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="(555) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>What do you need?</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Residential Junk Removal</option>
+          <option>Commercial Cleanout</option>
+          <option>Construction Debris Removal</option>
+          <option>Full Property Cleanout</option>
+          <option>Furniture / Appliance Pickup</option>
+          <option>Property Cleaning</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell us about your job — what needs to go, rough amount, any access notes..."></textarea>
+      </div>
+      <button class="form-submit" onclick="alert('Message sent! We\'ll be in touch shortly with your free quote.')">Send Message →</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Junk & Cleaning Solutions LLC</div>
+        <p class="footer-tagline">Professional junk removal and property cleaning. Licensed, insured, and committed to great work.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Pages</div>
+        <ul class="footer-links">
+          <li><button onclick="showPage('home')">Home</button></li>
+          <li><button onclick="showPage('about')">About Us</button></li>
+          <li><button onclick="showPage('contact')">Contact Us</button></li>
+          <li><button onclick="showPage('request')">Request Service</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Follow Us</div>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/p/Junk-And-Cleaning-Solutions-61565049747317/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Junk And Cleaning Solutions LLC</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ══════════════════════════════════════ REQUEST SERVICE ══════════════════════════════════════ -->
+<div id="page-request" class="page">
+
+  <div class="request-hero">
+    <div class="section-tag">Book a Pickup</div>
+    <h1 class="page-title">Request <em>Service</em></h1>
+    <p class="page-sub request-sub">Fill out the form below and we'll get back to you quickly with a free quote. No obligation, no pressure.</p>
+  </div>
+
+  <div class="request-form-wrap">
+
+    <div class="pricing-note">
+      <div class="pricing-note-icon">💡</div>
+      <div>We offer <strong class="white-text">free, upfront estimates</strong> before any work begins. Pricing is based on volume, weight, and type of material. The more detail you give us below, the more accurate your quote will be.</div>
+    </div>
+
+    <!--
+      EMAILJS SETUP:
+      1. Go to https://emailjs.com and sign up free
+      2. Create a Service (Gmail, Outlook, etc) — copy your Service ID
+      3. Create an Email Template — copy your Template ID
+      4. Go to Account > API Keys — copy your Public Key
+      5. Replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY in main.js
+    -->
+    <form id="service-request-form" onsubmit="handleFormSubmit(event)">
+
+      <h3>1. Select Your Service Type</h3>
+      <p class="field-hint">Select all that apply</p>
+      <div class="checklist">
+
+        <label class="checklist-item">
+          <input type="checkbox" name="service_residential" value="Residential Cleanout">
+          <span class="checkmark"></span>
+          Residential Cleanout
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" name="service_commercial" value="Commercial Cleanout">
+          <span class="checkmark"></span>
+          Commercial Cleanout
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" name="service_construction" value="Construction Debris">
+          <span class="checkmark"></span>
+          Construction Debris Removal
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" name="service_furniture" value="Furniture / Appliances">
+          <span class="checkmark"></span>
+          Furniture &amp; Appliance Pickup
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" name="service_estate" value="Estate / Property Cleanout">
+          <span class="checkmark"></span>
+          Estate / Full Property Cleanout
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" name="service_cleaning" value="Property Cleaning">
+          <span class="checkmark"></span>
+          Property Cleaning
+        </label>
+
+      </div>
+
+      <div class="divider"></div>
+      <h3>2. Your Information</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <h3>3. Job Details</h3>
+      <div class="form-group">
+        <label for="address">Service Address</label>
+        <input type="text" id="address" name="address" placeholder="123 Main St, City, State ZIP" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="volume">Estimated Volume</label>
+          <select id="volume" name="volume">
+            <option value="">How much junk?</option>
+            <option>Small — 1–2 items</option>
+            <option>Medium — partial truck load</option>
+            <option>Large — full truck load</option>
+            <option>Extra Large — multiple loads</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="preferred_date">Preferred Date</label>
+          <input type="date" id="preferred_date" name="preferred_date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="preferred_time">Preferred Time</label>
+        <select id="preferred_time" name="preferred_time">
+          <option value="">Select a window...</option>
+          <option>Morning (8am – 12pm)</option>
+          <option>Afternoon (12pm – 4pm)</option>
+          <option>Evening (4pm – 7pm)</option>
+          <option>Flexible — any time works</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Describe What Needs to Go</label>
+        <textarea id="description" name="description" placeholder="List the items or describe the space — furniture, appliances, boxes, yard waste, construction debris, etc. Photos can be sent via Facebook messenger for a faster estimate."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="access_notes">Special Access Notes (optional)</label>
+        <input type="text" id="access_notes" name="access_notes" placeholder="Gate code, stairs, tight driveway, etc.">
+      </div>
+
+      <!-- Honeypot spam trap — hidden from real users -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="form-submit request-submit">Submit Service Request →</button>
+
+      <div id="form-success" class="form-success-msg" style="display:none">
+        ✅ Request sent! We'll be in touch with your free quote shortly.
+      </div>
+
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Junk & Cleaning Solutions LLC</div>
+        <p class="footer-tagline">Professional junk removal and property cleaning. Licensed, insured, and committed to great work.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Pages</div>
+        <ul class="footer-links">
+          <li><button onclick="showPage('home')">Home</button></li>
+          <li><button onclick="showPage('about')">About Us</button></li>
+          <li><button onclick="showPage('contact')">Contact Us</button></li>
+          <li><button onclick="showPage('request')">Request Service</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Follow Us</div>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/p/Junk-And-Cleaning-Solutions-61565049747317/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Junk And Cleaning Solutions LLC</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
