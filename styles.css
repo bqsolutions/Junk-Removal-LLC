@@ -1,3 +1,27 @@
+.review-badge {
+  display: inline-flex;
+  text-decoration: none;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  gap: 0.875rem;
+  align-items: center;
+}
+.review-badge:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(26,143,227,0.45);
+  transform: translateY(-1px);
+}
+.rb-google { display: flex; align-items: center; gap: 0.75rem; }
+.rb-text { display: flex; flex-direction: column; line-height: 1.3; }
+.rb-name { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+.rb-stars { color: #f5a623; font-size: 0.95rem; font-weight: 700; }
+.rb-rating { color: #ffffff; }
+.rb-count { font-size: 0.72rem; color: rgba(255,255,255,0.45); font-weight: 500; }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --blue: #1a8fe3;
