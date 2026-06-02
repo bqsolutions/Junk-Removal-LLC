@@ -1,3 +1,31 @@
+/* Hide on desktop */
+.sms-sticky {
+  display: none;
+  z-index: 9999;
+  bottom: 7rem; /* bump it up higher */
+}
+
+/* Only show on mobile */
+@media (max-width: 768px) {
+  .sms-sticky {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    position: fixed;
+    bottom: 7rem;
+    right: 1.5rem;
+    z-index: 9999;
+    background: #1a8fe3;
+    color: white;
+    font-weight: 800;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(26,143,227,0.4);
+  }
+}
+
 .review-badge {
   display: inline-flex;
   text-decoration: none;
