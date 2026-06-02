@@ -15,8 +15,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo" onclick="showPage('home')">
-    <span class="nav-logo-top">Junk & Cleaning Solutions</span>
-    <span class="nav-logo-bot">Licensed · Insured · LLC</span>
+    <img src="images/logo.jpg" alt="Junk And Cleaning Solutions LLC" class="nav-logo-img">
   </div>
   <ul class="nav-links">
     <li><button onclick="showPage('home')" id="nav-home" class="active">Home</button></li>
@@ -24,7 +23,7 @@
     <li><button onclick="showPage('contact')" id="nav-contact">Contact Us</button></li>
     <li><button onclick="showPage('request')" id="nav-request" class="nav-cta">Request Service</button></li>
   </ul>
-  <div class="nav-phone">📞 <a href="tel:">Call for a Free Quote</a></div>
+  <div class="nav-phone">📞 <a href="tel:2523751368">(252) 375-1368</a></div>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
     <span></span>
     <span></span>
@@ -114,6 +113,35 @@
     </div>
   </section>
 
+  <!-- BEFORE & AFTER -->
+  <section class="before-after-section">
+    <div class="section-tag">Real Results</div>
+    <h2 class="section-h">Before &amp; <em>After</em></h2>
+    <p class="section-p">See the difference we make — from overwhelming clutter to clean, clear spaces every time.</p>
+    <div class="ba-grid">
+      <div class="ba-pair">
+        <div class="ba-img-wrap">
+          <img src="images/junk before.jpg" alt="Before junk removal">
+          <div class="ba-label ba-before">Before</div>
+        </div>
+        <div class="ba-img-wrap">
+          <img src="images/junk after.jpg" alt="After junk removal">
+          <div class="ba-label ba-after">After</div>
+        </div>
+      </div>
+      <div class="ba-pair">
+        <div class="ba-img-wrap">
+          <img src="images/junk before 2.jpg" alt="Before junk removal">
+          <div class="ba-label ba-before">Before</div>
+        </div>
+        <div class="ba-img-wrap">
+          <img src="images/junk after 2.jpg" alt="After junk removal">
+          <div class="ba-label ba-after">After</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section class="how-section">
     <div class="section-tag">Simple Process</div>
@@ -140,6 +168,64 @@
         <div class="step-title">Done. Enjoy the Space.</div>
         <p class="step-desc">We haul everything away, clean up behind ourselves, and leave you with a clutter-free space.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="section-tag">What Customers Say</div>
+    <h2 class="section-h">Real <em>Reviews</em></h2>
+    <p class="section-p">Verified reviews from real customers on Thumbtack.</p>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-source">Hired on Thumbtack</div>
+        </div>
+        <p class="review-text">"These guys are Great!!! Our garage has never looked better (except maybe when we moved in 17 years ago)! 17 years of "stuff/junk". They hauled away our accumulated deck furniture as well. I wouldn't hesitate to call them again!"</p>
+        <div class="review-details">Large items to haul · Furniture, appliances or electronics · ~1 pickup truck</div>
+        <div class="review-author">
+          <div class="review-avatar">L</div>
+          <div>
+            <div class="review-name">Laura M.</div>
+            <div class="review-date">Mar 13, 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-source">Hired on Thumbtack</div>
+        </div>
+        <p class="review-text">"Alex removed several items throughout my house and completely cleared a ton of junk that had been sitting on my back porch for years. He arrived when he said he would, and him and his mom worked diligently to remove all the items — they even cleaned the floor under an old dresser they moved. I will be using them again!"</p>
+        <div class="review-details">Large items to haul · Furniture, appliances or electronics · ~1 pickup truck</div>
+        <div class="review-author">
+          <div class="review-avatar">D</div>
+          <div>
+            <div class="review-name">Danielle J.</div>
+            <div class="review-date">Nov 12, 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-source">Hired on Thumbtack</div>
+        </div>
+        <p class="review-text">"Alex is an absolute gem of a human being — he and his mom make an excellent team. He has come out numerous times to grab junk from my grandmother's house. He is so kind and the cost is very reasonable. He communicated when he finished a load while we weren't home. I will continue to book him in the future."</p>
+        <div class="review-details">Large items to haul · Mixed trash · ~2 pickup trucks</div>
+        <div class="review-author">
+          <div class="review-avatar">B</div>
+          <div>
+            <div class="review-name">Brook L.</div>
+            <div class="review-date">Oct 23, 2025</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -195,6 +281,9 @@
 
   <div class="about-grid">
     <div class="about-visual">
+      <div class="about-photo-wrap">
+        <img src="images/about us 1.webp" alt="Junk And Cleaning Solutions team at work" class="about-photo">
+      </div>
       <div class="about-stat-row">
         <div class="about-stat">
           <div class="about-stat-num">100%</div>
@@ -306,7 +395,14 @@
           <div class="c-detail-icon">📞</div>
           <div>
             <div class="c-detail-label">Phone</div>
-            <a href="tel:">Call for a Free Quote</a>
+            <a href="tel:2523751368">(252) 375-1368</a>
+          </div>
+        </div>
+        <div class="c-detail">
+          <div class="c-detail-icon">✉️</div>
+          <div>
+            <div class="c-detail-label">Email</div>
+            <a href="mailto:junkandcleaningsolutions@gmail.com">junkandcleaningsolutions@gmail.com</a>
           </div>
         </div>
         <div class="c-detail">
