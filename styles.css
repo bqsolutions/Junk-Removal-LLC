@@ -1,8 +1,6 @@
 /* Hide on desktop */
 .sms-sticky {
   display: none;
-  z-index: 9999;
-  bottom: 7rem; /* bump it up higher */
 }
 
 /* Only show on mobile */
@@ -12,7 +10,7 @@
     align-items: center;
     gap: 0.4rem;
     position: fixed;
-    bottom: 7rem;
+    bottom: 3rem;
     right: 1.5rem;
     z-index: 9999;
     background: #1a8fe3;
